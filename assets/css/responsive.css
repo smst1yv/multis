@@ -1,0 +1,1580 @@
+@media(max-width:1341px){
+    .account{
+        max-width: 1200px;
+    }
+    .multishop-logo-container{
+        max-width: 1200px;
+    }
+
+    .menu-container .menu-bar{
+        max-width: 1200px;
+    }
+    .courusel{
+        max-width: 1200px;
+    }
+    .slider{
+        width: 766px;
+    }
+    .quality-servic-container{
+        max-width: 1200px;
+    }
+    .products-container{
+        max-width: 1200px;
+    }
+    .products-cart .cart .cart-img{
+    width: 82px;
+    height: 82px;
+    }
+    .products-cart .cart .cart-title{
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 55px;
+    transition: 0.5s;
+    }
+
+    .features-product{
+        max-width: 1200px;
+    }
+
+    .features-product .cart{
+        width: 250px;
+        position: relative;
+        margin-top: 25px;
+    }
+
+    .f-cart-title{
+        text-align: center;
+    background: #fff;
+    margin-top: -4px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    }
+
+    .f-cart-title h3{
+        font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 13px;
+    color: #3d464d;
+    }
+    .star{
+        margin-top: 12px;
+    }
+    .special-offer-two{
+        max-width: 1200px;
+    }
+    .footer-container{
+        max-width: 1200px;
+    }
+    .price-category-container{
+        max-width: 1200px;
+    }
+    .detail-products{
+        max-width: 1200px;
+    }
+    .product-slider{
+        max-width: 1200px;
+    }
+    .description-container{
+        max-width: 1200px;
+    }
+    .adress-total{
+        max-width: 1200px;
+    }
+    .product-calc-container{
+        max-width: 1200px;
+    }
+    .contact-container{
+        max-width: 1200px;
+    }
+}
+
+
+@media(max-width:1215px){
+    .quality-servic-container img{
+    width: 230px;
+    height: 90px;
+    }
+}
+
+@media(max-width:1214px){
+    .account{
+        max-width: 1100px;
+    }
+    .multishop-logo-container{
+        max-width: 1100px;
+    }
+    .menu-container .menu-bar{
+        max-width: 1100px;
+    }
+    .courusel{
+        max-width: 1100px;
+    }
+    .slider{
+        width: 680px;
+    }
+    .quality-servic-container{
+        max-width: 1100px;
+    }
+    .products-container{
+        max-width: 1100px;
+    }
+
+    .features-product{
+        max-width: 1100px;
+    }
+    .special-offer-two{
+        max-width: 1100px;
+    }
+    .footer-container{
+        max-width: 1100px;
+    }
+    .price-category-container{
+        max-width: 1100px;
+    }
+    .features-product .cart{
+        width: 235px;
+    }
+    .detail-products{
+        max-width: 1100px;
+    }
+    .product-slider{
+        max-width: 1100px;
+    }
+    .description-container{
+        max-width: 1100px;
+    }
+    .rev-left .rev-media p{
+        width: 90%;
+    }
+    .adress-total{
+        max-width: 1100px;
+    }
+    .product-calc-container{
+        max-width: 1100px;
+    }
+    .contact-container{
+        max-width: 1100px;
+    }
+}
+
+
+@media(max-width:1118px){
+    .account{
+        max-width: 1000px;
+    }
+    .multishop-logo-container{
+        max-width: 1000px;
+    }
+    .menu-container .menu-bar{
+        max-width: 1000px;
+    }
+    .courusel{
+        max-width: 1000px;
+    }
+    .slider{
+        width: 580px;
+    }
+    .quality-servic-container{
+        max-width: 1000px;
+    }
+    .products-container{
+        max-width: 1000px;
+    }
+    .special-offer-two{
+        max-width: 1000px;
+    }
+
+    .quality-servic-container .quality{
+    display: flex;
+    background: #fff;
+    padding-left: 9px;
+    padding-right: 51px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    }
+
+    .quality-servic-container .quality img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0px;
+    }
+
+    .quality-servic-container .quality span{
+        margin-left: 10px;
+    font-size: 1.25rem;
+    font-weight: 500!important;
+    color: #3d464d;
+    margin-top: 7px;
+    }
+
+    .products-cart .cart .cart-title{
+        padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 26px;
+    transition: 0.5s;
+    }
+
+    .features-product{
+        max-width: 1000px;
+    }
+
+    .features-product .cart{
+        width: 210px;
+    }
+    .f-cart-title{
+        padding-top: 17px;
+    padding-bottom: 15px;
+    }
+
+    .star{
+        margin-top: 8px;
+    }
+    .special-offer-two .special-img{
+        height: 248px;
+    }
+
+    .footer-container{
+        max-width: 1000px;
+    }
+    .price-category-container{
+        max-width: 1000px;
+    }
+    .detail-products{
+        max-width: 1000px;
+    }
+    .product-slider{
+        max-width: 1000px;
+    }
+    .description-container{
+        max-width: 1000px;
+    }
+    .adress-total{
+        max-width: 1000px;
+    }
+    .adress-total .billing{
+        margin-right: 30px;
+    }
+    .adress-total .billing .billing-head h5 span::after{
+        width: 70%;
+    }
+    .product-calc-container{
+        max-width: 1000px;
+    }
+    .contact-container{
+        max-width: 1000px;
+    }
+}
+
+
+
+@media(max-width:1006px){
+    .account .about{
+        display: none;
+    }
+    .account .aue{
+        left: 40%;
+    }
+    .shop-favorite{
+        display: block;
+    }
+    .multishop-logo-container .search{
+        display: none;
+    }
+    .menu-container{
+        display: none;;
+    }
+    .multishop-logo-container .call-container{
+        display: none;
+    }
+
+    .multishop-logo-container{
+        max-width: 900px;
+    }
+    .multishop{
+        background-color: #3d464d!important;
+    }
+
+    .multishop-logo-container .logo a .multi{
+        color: #3d464d;
+    background-color: #fff!important;
+    }
+    .multishop-logo-container .logo a .shop{
+        color: #fff!important;
+    background-color: #ffd333;
+    }
+    .multishop .multishop-logo-container .hamburger-menu{
+        display: block;
+    }
+    .multishop .multishop-logo-container .hamburger{
+        display: block;
+    }
+    .courusel{
+        max-width: 900px;
+    }
+
+    .courusel-right{
+        position: relative;
+        right: 0;
+    }
+
+    .courusel-container{
+        flex-wrap: wrap;
+    }
+
+    .slider{
+        width: 905px;
+    }
+
+    .scale-container{
+    width: 905px;
+    max-width: 905px;
+    margin: 25px auto;
+    }
+    .image-container-scale{
+        width: 905px;
+    }
+
+    .image-container-scale img{
+        width: 103.1%;
+    }
+
+    .overlay-scale{
+        width: 905px;
+    }
+    .quality-servic-container{
+        max-width: 940px;
+        justify-content: center;
+    }
+
+    .quality-servic-container img{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0px;
+        margin-right: 6px;
+        }
+
+        .quality-servic-container .quality{
+        display: flex;
+        background: #fff;
+        padding-left: 9px;
+        padding-right: 29px;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        margin: auto;
+        }
+
+        .products-container{
+            max-width: 900px;
+        }
+
+        .features-product{
+            max-width: 900px;
+        }
+        .special-offer-two{
+            max-width: 900px;
+        }
+        .footer-container{
+            max-width: 900px;
+        }
+
+        .footer-top{
+            display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+
+        .footer-top .touch h4{
+            width: 100%;
+        }
+
+        .footer-top .touch{
+            margin-bottom: 25px;
+        }
+        .footer-top .quick{
+            margin-bottom: 25px;
+        }
+        .footer-top .myaccount{
+            margin-bottom: 25px;
+        }
+        .footer-top .newsletter h4{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .footer-top .newsletter input{
+            width: 91%;
+        }
+        .footer-top .newsletter .signup{
+            width: 100px;
+    height: 38px;
+    padding-top: 5px
+        }
+
+        .price-category-container{
+            max-width: 900px;
+        }
+
+       .price-list .features-product .cart{
+            width: 277px;
+        }
+
+        .price-list  .img-button .button{
+            height: 74%;
+        }
+        .detail-products{
+            max-width: 900px;
+        }
+        .product-slider{
+            max-width: 900px;
+        }
+
+        .description-container{
+            max-width: 900px;
+        }
+        .adress-total{
+            max-width: 900px;
+            flex-direction: column;
+        }
+
+        .adress-total .billing{
+            margin-right: 0px;
+            flex: 100%;
+            max-width: 100%;
+        }
+        .adress-total .billing .billing-head h5 span::after{
+            width: 55%;
+        }
+
+        .adress-total .order{
+            flex: 100%;
+            max-width: 100%;
+        }
+        .order-head h5 span::after{
+            width: 66%;
+        }
+        .order .payment .payment-head h5 span::after{
+            width: 72%;
+        }
+        .product-calc-container{
+            max-width: 900px;
+        }
+
+        .product-calc{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+
+        .product-calc .number-product{
+        margin-bottom: 3rem!important;
+        display: block!important;
+        width: 100%!important;
+        overflow-x: auto!important;
+        flex: 100%!important;
+        max-width: 100%!important;
+        margin-right: 0!important;
+        }
+
+        .product-calc .total-product{
+            flex: 100%!important;
+        max-width: 100%!important;
+}
+
+        .contact-container{
+         max-width: 900px;
+            }
+
+        .contact-container .contact-location{
+        flex-direction: column;
+        }
+        .contact-container .contact-location .contact{
+            margin-right: 0;
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        .contact-container .contact-location .location{
+            margin-right: 0;
+            flex: 100%;
+            max-width: 100%;
+        }
+}
+
+
+
+
+
+@media(max-width:606px){
+    .multishop-logo-container{
+        max-width: 500px;
+    }
+}
+@media(max-width:506px){
+    .multishop-logo-container{
+        max-width: 400px;
+    }
+    .special-offer-two{
+        max-width: 400px;
+    }
+
+}
+
+
+@media(max-width:918px){
+    .shop-favorite{
+        left: 54%;
+    }
+}
+
+@media(max-width:894px){
+    .quality-servic-container  .return{
+        padding-right: 201px;
+    }
+    .quality-servic-container .support{
+        padding-left: 22px;
+    padding-right: 192px;
+    }
+
+    .quality-servic-container .higquality{
+        padding-right: 185px;
+    padding-left: 15px;
+    }
+
+    .quality-servic-container .freedelivery{
+        padding-right: 188px;
+    padding-left: 22px;
+    }
+    .quality-servic-container .quality{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:828px){
+    .shop-favorite{
+        left: 56%;
+    }
+}
+
+
+
+@media(max-width:732px){
+    .shop-favorite{
+        left: 58%;
+    }
+}
+
+@media(max-width:684px){
+    .quality-servic-container{
+        justify-content: center;
+    }
+}
+
+@media(max-width:654px){
+    .shop-favorite{
+        left: 60%;
+    }
+}
+
+@media(max-width:663px){
+    .domain-cart{
+        margin-top: 80px;
+        display: block;
+        text-align: center;
+    }
+    .domain-cart img{
+        width: 225px;
+        height: 20px;
+        margin-top: 25px;
+    }
+
+}
+
+@media(max-width:592px){
+    .shop-favorite{
+        left: 62%;
+    }
+}
+
+
+
+@media(max-width:526px){
+    .shop-favorite{
+        left: 66%;
+    }
+}
+
+@media(max-width:526px){
+    .shop-favorite{
+        left: 70%;
+    }
+}
+
+@media(max-width:392px){
+    .shop-favorite{
+        left: 72%;
+    }
+}
+@media(max-width:362px){
+    .account .aue {
+        left: 50%;
+    }
+    .account-container{
+        height: 80px;
+    }
+    .shop-favorite{
+        left: 41%;
+        top: 50px;
+    }
+}
+
+@media(max-width:324px){
+    .multishop-logo-container .logo a .multi{
+        width: 99px;
+        display: inline-block;
+        text-align: center;
+        height: 46px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: Roboto,sans-serif;
+        padding-top: 7px;
+    }
+    .multishop-logo-container .logo a .shop{
+        width: 99px;
+        display: inline-block;
+        text-align: center;
+        height: 46px;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: Roboto,sans-serif;
+        padding-top: 7px;
+    }
+}
+
+@media(max-width:928px){
+    .courusel{
+        max-width: 894px;
+    }
+    .slider{
+        width: 897px;
+    }
+
+    .scale-container{
+        width: 897px;
+        max-width: 897px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 897px;
+        }
+    
+        .image-container-scale img{
+            width: 103.1%;
+        }
+    
+        .overlay-scale{
+            width: 897px;
+        }
+        .quality-servic-container{
+            max-width: 897px;
+        }
+        .products-container{
+            max-width: 897px;
+        }
+
+        .features-product{
+            max-width: 897px;
+        }
+        .special-offer-two{
+            max-width: 897px;
+        }
+        .footer-container{
+            max-width: 897px;
+        }
+        .price-category-container{
+            max-width: 897px;
+        }
+        .detail-products{
+            max-width: 897px;
+        }
+        .description-container{
+            max-width: 897px;
+        }
+        .adress-total{
+            max-width: 897px;
+        }
+        .product-calc-container{
+            max-width: 897px;
+        }
+        .contact-container{
+            max-width: 897px;
+        }
+}
+
+@media(max-width:902px){
+    .courusel{
+        max-width: 801px;
+    }
+    .slider{
+        width: 805px;
+    }
+
+    .scale-container{
+        width: 806px;
+        max-width: 806px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 806px;
+        }
+    
+        .image-container-scale img{
+            width: 103.4%;
+        }
+    
+        .overlay-scale{
+            width: 806px;
+        }
+
+        .quality-servic-container{
+            max-width: 806px;
+        }
+        .products-container{
+            max-width: 806px;
+        }
+        .features-product{
+            max-width: 806px;
+        }
+        .special-offer-two{
+            max-width: 806px;
+        }
+        .footer-container{
+            max-width: 806px;
+        }
+        
+        .price-category-container{
+            max-width: 806px;
+        }
+        .price-list .features-product .cart{
+            width: 228px;
+        }
+        .detail-products{
+            max-width: 806px;
+            flex-wrap: wrap;
+        }
+        .product-slider{
+            max-width: 806px;
+        }
+        .splide{
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .product-d{
+            width: 100%;
+        }
+        .product-d .colors{
+            flex-wrap: wrap;
+        }
+        .description-container{
+            max-width: 806px;
+        }
+        .rev-left{
+            flex: 100%;
+            max-width: 100%;
+        }
+        .lev-right{
+            flex: 100%;
+            max-width: 100%;
+        }
+        .adress-total{
+            max-width: 806px;
+        }
+        .product-calc-container{
+            max-width: 806px;
+        }
+        .contact-container{
+            max-width: 806px;
+        }
+}
+
+@media(max-width:806px){
+    .multishop-logo-container{
+        max-width: 701px;
+    }
+
+    .courusel{
+        max-width: 705px;
+    }
+    .slider{
+        width: 701px;
+    }
+
+    .scale-container{
+        width: 702px;
+        max-width: 702px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 702px;
+        }
+    
+        .image-container-scale img{
+            width: 103.9%;
+        }
+    
+        .overlay-scale{
+            width: 702px;
+        }
+
+        
+        .products-container{
+            max-width: 702px;
+        }
+
+        .products-cart .cart .cart-img{
+            width: 95px;
+            height: 95px;
+        }
+        .products-cart .cart .cart-title{
+            padding-top: 30px;
+            padding-left: 25px;
+            padding-right: 97px;
+            transition: 0.5s;
+        }
+
+        .quality-servic-container{
+            justify-content: end;
+        }
+        .quality-servic-container .quality{
+            width: 100%;
+        }
+        .quality-servic-container .higquality{
+            padding-left: 35px;
+            padding-right: 0;
+        }
+        .quality-servic-container .freedelivery{
+            padding-left: 35px;
+            padding-right: 0;
+        }
+        .quality-servic-container .return{
+            padding-left: 35px;
+        }
+        .quality-servic-container .support{
+            padding-left: 35px;
+            padding-right: 0;
+        }
+
+        .features-product{
+            max-width: 702px;
+        }
+        .special-offer-two{
+            max-width: 702px;
+        }
+
+        .special-offer-two .special-img{
+            width: 100%;
+        }
+        .special-offer-two .mt-image{
+            margin-bottom: 30px;
+        }
+
+        .special-offer-two{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .footer-container{
+            max-width: 702px;
+        }
+        .price-category-container{
+            max-width: 702px;
+        }
+
+        .price-list{
+            display: block;
+        }
+        .all-price-container{
+            margin-right: 0;
+        }
+        .all-price-container .all-price{
+            width: 100%;
+        }
+        .all-price-container .all-color{
+            width: 100%;
+        }
+        .all-price-container .all-size{
+            width: 100%;
+        }
+        .price-list .features-product .cart{
+            width: 327px;
+        }
+        .detail-products{
+            max-width: 702px;
+        }
+        .product-slider{
+            max-width: 702px;
+        }
+        .description-container{
+            max-width: 702px;
+        }
+        .adress-total{
+            max-width: 702px;
+        }
+
+        .product-calc-container{
+            max-width: 702px;
+        }
+
+        .contact-container{
+            max-width: 702px;
+        }
+
+
+        .filter-price i:nth-child(2){
+            display: none;
+        }
+        .filter-price i:nth-child(3){
+            display: none;
+        }
+
+        .shotr-show .shor{
+            display: none;
+        }
+        .shotr-show .show{
+            display: none;
+        }
+        .show-sh{
+            display: flex;
+        }
+    }
+
+@media (max-width:711px){
+    .multishop-logo-container{
+        max-width: 630px;
+    }
+
+    .courusel{
+        max-width: 630px;
+    }
+    .slider{
+        width: 630px;
+    }
+
+    .scale-container{
+        width: 630px;
+        max-width: 630px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 630px;
+        }
+    
+        .image-container-scale img{
+            width: 104.5%;
+        }
+    
+        .overlay-scale{
+            width: 630px;
+        }
+       
+
+        .products-container{
+            max-width: 630px;
+        }
+
+        .products-cart .cart .cart-img{
+            width: 80px;
+            height: 80px;
+        }
+        .products-cart .cart .cart-title{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 65px;
+            transition: 0.5s;
+        }
+
+        .features-product{
+            max-width: 630px;
+        }
+
+        .features-product .cart {
+            width: 180px;
+        }
+        .special-offer-two{
+            max-width: 630px;
+        }
+        .footer-container {
+            max-width: 630px;
+        }
+        .detail-products{
+            max-width: 630px;
+        }
+        .product-slider{
+            max-width: 630px;
+        }
+        .description-container{
+            max-width: 630px;
+        }
+        .adress-total{
+            max-width: 630px;
+        }
+
+        .product-calc-container{
+            max-width: 630px;
+        }
+
+        .contact-container{
+            max-width: 630px;
+        }
+}
+
+        @media(max-width:570px){
+            .products-cart .cart{
+                display: flex;
+                cursor: pointer;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            .products-cart .cart .cart-img{
+                width: 100px;
+                height: 80px;
+            }
+            .products-cart .cart .cart-img img{
+                width: 100%;
+                height: auto;
+                transition: 0.5s;
+            }
+            .products-cart .cart .cart-title{
+                padding-right: 16px;
+                width: 100%;
+            }
+
+        }
+
+        @media(max-width:711px){
+            .price-category-container{
+                max-width: 630px;
+            }
+            .price-list .features-product .cart{
+                width: 297px;
+            }
+        }
+
+
+@media (max-width:633px){
+    .multishop-logo-container{
+        max-width: 550px;
+    }
+
+    .courusel{
+        max-width: 550px;
+    }
+    .slider{
+        width: 550px;
+    }
+
+    .scale-container{
+        width: 550px;
+        max-width: 550px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 550px;
+        }
+    
+        .image-container-scale img{
+            width: 105%;
+        }
+    
+        .overlay-scale{
+            width: 550px;
+        }
+
+
+        .products-container{
+            max-width: 550px;
+        }
+        .products-cart .cart .cart-title{
+            padding-right: 16px;
+        }
+
+        .features-product{
+            max-width: 550px;
+        }
+        .special-offer-two{
+            max-width: 550px;
+        }
+        .footer-container{
+            max-width: 550px;
+        }
+        .price-category-container{
+            max-width: 550px;
+        }
+        .price-list .features-product .cart{
+            width: 263px;
+        }
+        .detail-products{
+            max-width: 550px;
+        }
+        .product-slider{
+            max-width: 550px;
+        }
+        .description-container{
+            max-width: 550px;
+        }
+        .adress-total{
+            max-width: 550px;
+        }
+
+        .product-calc-container{
+            max-width: 550px;
+        }
+
+        .contact-container{
+            max-width: 550px;
+        }
+}
+
+@media (max-width:551px){
+    .multishop-logo-container{
+        max-width: 469px;
+    }
+
+    .courusel{
+        max-width: 469px;
+    }
+    .slider{
+        width: 469px;
+    }
+    .courusel-sec{
+        width: 0;
+    }
+
+    .scale-container{
+        width: 469px;
+        max-width: 469px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 469px;
+        }
+    
+        .image-container-scale img{
+            width: 106%;
+        }
+    
+        .overlay-scale{
+            width: 469px;
+        }
+
+
+        .features-product{
+            max-width: 469px;
+        }
+
+        .features-product .cart {
+            width: 220px;
+        }
+        .special-offer-two{
+            max-width: 469px;
+        }
+        .footer-container{
+            max-width: 469px;
+        }
+        .price-category-container{
+            max-width: 469px;
+        }
+
+        .price-list .features-product .cart{
+            width: 100%;
+        }
+        .price-list .img-button .button {
+            height: 81%;
+        }
+        .detail-products{
+            max-width: 469px;
+        }
+        .product-slider{
+            max-width: 469px;
+        }
+        .product-d .addcart #input{
+            width: 10%;
+        }
+        .description-container{
+            max-width: 469px;
+        }
+        .description-container .description-button{
+            flex-wrap: wrap;
+        }
+        .product-slider{
+            display: none;
+        }
+        .autoplay{
+            display: none;
+        }
+        .respo-cart{
+            display: block;
+            max-width: 469px;
+        }
+        .adress-total{
+            max-width: 469px;
+        }
+
+        .product-calc-container{
+            max-width: 469px;
+        }
+
+        .contact-container{
+            max-width: 469px;
+        }
+}
+
+@media (max-width:488px){
+    .multishop-logo-container{
+        max-width: 390px;
+    }
+
+    .courusel{
+        max-width: 390px;
+    }
+    .slider{
+        width: 390px;
+    }
+    .scale-container{
+        width: 390px;
+        max-width: 390px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 390px;
+        }
+    
+        .image-container-scale img{
+            width: 107%;
+        }
+    
+        .overlay-scale{
+            width: 390px;
+        }
+
+        .features-product{
+            max-width: 390px;
+        }
+
+        .f-cart-title h3{
+            margin-top: 25px;
+        }
+        .star{
+            margin-top: 25px;
+        }
+        .features-product .cart{
+            width: 390px;
+        }
+        .special-offer-two{
+            max-width: 390px;
+        }
+        .footer-container{
+            max-width: 390px;
+        }
+        .price-category-container{
+            max-width: 390px;
+        }
+        .detail-products{
+            max-width: 390px;
+        }
+        .product-slider{
+            max-width: 390px;
+        }
+        .description-container{
+            max-width: 390px;
+        }
+        .respo-cart{
+            max-width: 390px;
+        }
+        .adress-total{
+            max-width: 390px;
+        }
+
+        .product-calc-container{
+            max-width: 390px;
+        }
+
+        .contact-container{
+            max-width: 390px;
+        }
+}
+
+@media(max-width:416px){
+    .products-cart .cart .cart-img{
+        width: 115px;
+        height: 80px;
+    }
+}
+
+@media (max-width:400px){
+    .multishop-logo-container{
+        max-width: 340px;
+    }
+
+    .courusel{
+        max-width: 340px;
+    }
+    .slider{
+        width: 340px;
+    }
+
+    .multishop-logo-container .logo a .multi{
+        width: 95px;
+        height: 45px;
+        font-size: 26px;
+    }
+    .multishop-logo-container .logo a .shop{
+        width: 95px;
+        height: 45px;
+        font-size: 26px;
+    }
+    .scale-container{
+        width: 340px;
+        max-width: 340px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 340px;
+        }
+    
+        .image-container-scale img{
+            width: 108%;
+        }
+    
+        .overlay-scale{
+            width: 340px;
+        }
+
+        .features-product{
+            max-width: 340px;
+        }
+        .special-offer-two{
+            max-width: 340px;
+        }
+        .footer-container{
+            max-width: 340px;
+        }
+        .price-category-container{
+            max-width: 340px;
+        }
+        .detail-products{
+            max-width: 340px;
+        }
+        .product-slider{
+            max-width: 340px;
+        }
+        .product-d .sizes{
+            flex-wrap: wrap;
+        }
+        .product-d .addcart #input{
+            width: 15%;
+        }
+        .description-container{
+            max-width: 340px;
+        }
+        .respo-cart{
+            max-width: 340px;
+        }
+        .adress-total{
+            max-width: 340px;
+        }
+        .adress-total .billing .billing-head h5 span::after{
+            width: 30%;
+        }
+        .order-head h5 span::after{
+            width: 40%;
+        }
+        .order .payment .payment-head h5 span::after{
+            width: 51%;
+        }
+
+        .product-calc-container{
+            max-width: 340px;
+        }
+
+        .contact-container{
+            max-width: 340px;
+        }
+}
+
+@media(max-width:354px){
+    .footer-top .newsletter input{
+        width: 63%;
+    }
+
+    .domain-cart{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:344px){
+    .multishop-logo-container{
+        max-width: 280px;
+    }
+
+    .courusel{
+        max-width: 280px;
+    }
+    .slider{
+        width: 280px;
+    }
+    .scale-container{
+        width: 280px;
+        max-width: 280px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 280px;
+        }
+    
+        .image-container-scale img{
+            width: 109%;
+        }
+    
+        .overlay-scale{
+            width: 280px;
+        }
+        .features-product{
+            max-width: 280px;
+        }
+        .special-offer-two{
+            max-width: 280px;
+        }
+        .footer-container{
+            max-width: 280px;
+        }
+
+        .price-category-container{
+            max-width: 280px;
+        }
+        .detail-products{
+            max-width: 280px;
+        }
+        .product-slider{
+            max-width: 280px;
+        }
+        .description-container{
+            max-width: 280px;
+        }
+        .product-d .addcart .addcartbtn{
+            margin-left: 0;
+            margin-top: 15px;
+        }
+        .product-d .addcart{
+            flex-wrap: wrap;
+        }
+        .respo-cart{
+            max-width: 280px;
+        }
+        .adress-total{
+            max-width: 280px;
+        }
+
+        .product-calc-container{
+            max-width: 280px;
+        }
+
+        .contact-container{
+            max-width: 280px;
+        }
+        .filter-price .head-title::after{
+            width: 40%;
+        }
+        .price-list .head-title::after{
+            width: 35%;
+        }
+        .contact-container .contact-head{
+            font-size: 20px;
+        }
+}
+
+@media(max-width:300px){
+    .products-cart .cart .cart-img{
+        width: 138px;
+        height: 80px;
+    }
+}
+
+@media(max-width:284px){
+    .multishop-logo-container{
+        max-width: 249px;
+    }
+    .courusel{
+        max-width: 249px;
+    }
+    .slider{
+        max-width: 249px;
+    }
+    .scale-container{
+        width: 249px;
+        max-width: 249px;
+        margin: 25px auto;
+        }
+        .image-container-scale{
+            width: 249px;
+        }
+    
+        .image-container-scale img{
+            width: 110%;
+        }
+    
+        .overlay-scale{
+            width: 249px;
+        }
+        .features-product{
+            max-width: 249px;
+        }
+
+        .special-offer-two{
+            max-width: 249px;
+        }
+        .footer-container{
+            max-width: 249px;
+        }
+        .price-category-container{
+            max-width: 249px;
+        }
+        .detail-products{
+            max-width: 249px;
+        }
+        .product-slider{
+            max-width: 249px;
+        }
+        .description-container{
+            max-width: 249px;
+        }
+        .product-d .addcart #input{
+            width: 20%;
+        }
+        .respo-cart{
+            max-width: 249px;
+        }
+        .adress-total{
+            max-width: 249px;
+        }
+
+        .product-calc-container{
+            max-width: 249px;
+        }
+
+        .contact-container{
+            max-width: 249px;
+        }
+}
+
+@media(max-width:280px){
+    .footer-top .newsletter .signup{
+        padding: 6px 0;
+    }
+}
+
+@media(max-width:272px){
+    .domain-cart img{
+        width: 168px;
+    }
+}

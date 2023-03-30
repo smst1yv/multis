@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="account-container">
+        <div class="account">
+            <div class="about">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="aue">
+                <div id="myaccount" class="myaccount" onclick="toggleDropdown()">
+                    <a id="ac" class="ac" href="javascript:void(0)">MyAccount <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="account-dropdown" class="account-dropdown">
+                        <a class="sigin" href="#">Sign In</a>
+                        <a class="sigup" href="#">Sign Up</a>
+                    </div>
+                </div>
+                <div id="valyuta" class="valyuta" onclick="valy()">
+                    <a id="vl" class="vl" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="vl-dropdown" class="vl-dropdown">
+                        <a class="eur" href="#">EUR</a>
+                        <a class="gbp" href="#">GBP</a>
+                        <a class="cap" href="#">CAP</a>
+                    </div>
+                </div>
+
+                <div class="lang" onclick="langdr()">
+                    <a class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <a class="ru" href="#">RU</a>
+                        <a class="az" href="#">AZ</a>
+                    </div>
+                </div>
+        </div>
+        <div class="shop-favorite">
+            <i class="fa-solid fa-heart"></i> <span class="heart-price">0</span>
+            <i class="fa-solid fa-cart-shopping"></i> <span class="shop-price">0</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="multishop" id="multishop">
+    <div class="multishop-logo-container">
+        <div class="logo">
+            <a href="#">
+                <span class="multi">MULTI</span>
+                <span class="shop">SHOP</span>
+            </a>
+        </div>
+
+        <div class="multi-menu-container">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./shop-detail.html">Shop Detali</a></li>
+                <li onclick="showInput()" id="dd-open"><a style="display: flex" href="javascript:void(0)">Pages <i style="position: relative; left: 5px;" class="fa-solid fa-sort-down"></i></a></li>
+                <div style="margin-bottom: 5px;" id="dd-menu" class="dd-menu">
+                  <ul>
+                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                    <li><a href="./checkout.html">Checkout</a></li>
+                  </ul>
+                </div>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Search For Products">
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="call-container">
+            <h2>Customer Service</h2>
+            <h3>050 660 34 04</h3>
+        </div>
+        <div class="hamburger-menu">
+            <i onclick="increaseHeight()" id="hamburger" class="fa-solid fa-bars hamburger"></i>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="menu-container">
+        <div class="menu-bar">
+            <div class="menu-bar-container">
+                <div  class="menu-categories">
+                    <a onclick="dropen()" class="categories-button" href="#"><i class="fa-solid fa-bars"></i> Categories <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-menu-bar" class="dropdown-menu-bar">
+                        <ul>
+                            <li><a onclick="dresses()"  id="dresses" href="javascript:void(0)">Dresses <i style="margin-left: 170px;" class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="">Shirts</a></li>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sleepwear</a></li>
+                            <li><a href="">Sportswear</a></li>
+                            <li><a href="">JumpSuits</a></li>
+                            <li><a href="">Blazers</a></li>
+                            <li><a href="">Jazkets</a></li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="drop-drop-menu" class="drop-drop-menu" >
+                    <ul>
+                        <li><a href="">Men's Dresses</a></li>
+                        <li><a href="">Women's Dresses</a></li>
+                        <li><a href="">Baby's Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bar-two" id="menu-bar-two">
+                    <ul>
+                        <li><a id="active" style="margin-left: 40px;" href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./shop-detail.html">Shop Detail</a></li>
+                        <li><a id="pages" href="javascript:void(0)" onclick="pgop()">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+                        <div class="pages-dropdown" id="pg-dropdown"> 
+                            <ul>
+                                <li class="li-one"><a href="./shopping-cart.html">Shopping Cart</a></li>
+                                <li class="li-two"><a href="./checkout.html">Check Out</a></li>
+                            </ul>
+                        </div>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="basket-favorites">
+                <i class="fa-solid fa-heart"></i><span>0</span>
+                <i class="fa-solid fa-cart-shopping"></i><span>0</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="courusel">
+        <div class="courusel-sec">
+          <div class="courusel-container container m-auto">
+            <div class="courusel-left">
+              <div class="slider">
+                <div class="slider-container">
+                  <img src="./assets/img/carousel-1.jpg" alt="Resim 1">
+                  <div class="slider-content">
+                    <h2>Men Fashion</h2>
+                    <p id="slidep">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam
+                    </p>
+                    <button class="one-btn">Shop Now</button>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <img src="./assets/img/carousel-2.jpg" alt="Resim 2">
+                  <div class="slider-content">
+                    <h2>Women Fashion</h2>
+                    <p id="slidep">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam
+                    </p>
+                    <button class="two-btn">Shop Now</button>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <img src="./assets/img/carousel-3.jpg" alt="Resim 3">
+                  <div class="slider-content">
+                    <h2>Kids Fashion</h2>
+                    <p id="slidep">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam
+                    </p>
+                    <button class="tree-btn">Shop Now</button>
+                  </div>
+                </div>
+                <div class="slider-nav">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="courusel-right">
+              <div class="scale-container">
+                <div class="image-container-scale">
+                  <img src="./assets/img/offer-1.jpg" alt="Resim 1" />
+                  <div class="overlay-scale">
+                    <p>Save 20%</p>
+                    <h3>Special Offer</h3>
+                    <button class="btn-scale">Shop Now</button>
+                  </div>
+                </div>
+                <div class="image-container-scale scale-2">
+                  <img src="./assets/img/offer-2.jpg" alt="Resim 2" />
+                  <div class="overlay-scale">
+                    <p>Save 20%</p>
+                    <h3>Special Offer</h3>
+                    <button class="btn-scale">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="quality-servic-container">
+        <div class="quality higquality">
+          <img src="./assets/img/checkedpng.png" alt="">
+          <span>Quality Product</span>
+        </div>
+
+        <div class="quality freedelivery">
+          <img src="./assets/img/free.png" alt="">     
+          <span>Free Shipping</span>     
+        </div>
+
+        <div class="quality return">
+          <img src="./assets/img/sagsol.png" alt="">
+          <span>14-Day Return</span>
+        </div>
+
+        <div class="quality support">
+          <img src="./assets/img/call.png" alt="">
+          <span>24/7 Support</span>
+        </div>
+
+      </div>
+
+
+      <div class="products-container">
+
+        <div class="products-head">
+          <h2 class="head-title">
+            <span>Categories</span>
+          </h2>
+        </div>
+
+        <div class="products-cart">
+            <div class="cart">
+                <div class="cart-img">
+                   <img src="./assets/img/cat-1.jpg" alt="">
+                </div>
+                <div class="cart-title">
+                    <h4>Category Name</h4>
+                    <h5>100 Products</h5>
+                </div>
+            </div>
+
+            <div class="cart">
+              <div class="cart-img">
+                 <img src="./assets/img/cat-2.jpg" alt="">
+              </div>
+              <div class="cart-title">
+                  <h4>Category Name</h4>
+                  <h5>100 Products</h5>
+              </div>
+          </div>
+
+          <div class="cart">
+            <div class="cart-img">
+               <img src="./assets/img/cat-3.jpg" alt="">
+            </div>
+            <div class="cart-title">
+                <h4>Category Name</h4>
+                <h5>100 Products</h5>
+            </div>
+        </div>
+
+        <div class="cart">
+          <div class="cart-img">
+             <img src="./assets/img/cat-4.jpg" alt="">
+          </div>
+          <div class="cart-title">
+              <h4>Category Name</h4>
+              <h5>100 Products</h5>
+          </div>
+      </div>
+
+      <div class="cart">
+        <div class="cart-img">
+           <img src="./assets/img/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-gold-220907_inline.jpg.large.jpg" alt="">
+        </div>
+        <div class="cart-title">
+            <h4>Category Name</h4>
+            <h5>100 Products</h5>
+        </div>
+    </div>
+
+    <div class="cart">
+      <div class="cart-img">
+         <img src="./assets/img/akilli.png" alt="">
+      </div>
+      <div class="cart-title">
+          <h4>Category Name</h4>
+          <h5>100 Products</h5>
+      </div>
+  </div>
+
+  <div class="cart">
+    <div class="cart-img">
+       <img src="./assets/img/fb.png" alt="">
+    </div>
+    <div class="cart-title">
+        <h4>Category Name</h4>
+        <h5>100 Products</h5>
+    </div>
+</div>
+
+<div class="cart">
+  <div class="cart-img">
+     <img src="./assets/img/fc-barcelona.png" alt="">
+  </div>
+  <div class="cart-title">
+      <h4>Category Name</h4>
+      <h5>100 Products</h5>
+  </div>
+</div>
+
+<div class="cart">
+  <div class="cart-img">
+     <img src="./assets/img/mkbok.jpeg" alt="">
+  </div>
+  <div class="cart-title">
+      <h4>Category Name</h4>
+      <h5>100 Products</h5>
+  </div>
+</div>
+
+<div class="cart">
+  <div class="cart-img">
+     <img src="./assets/img/mkbok.jpeg" alt="">
+  </div>
+  <div class="cart-title">
+      <h4>Category Name</h4>
+      <h5>100 Products</h5>
+  </div>
+</div>
+
+<div class="cart">
+  <div class="cart-img">
+     <img src="./assets/img/mkbok.jpeg" alt="">
+  </div>
+  <div class="cart-title">
+      <h4>Category Name</h4>
+      <h5>100 Products</h5>
+  </div>
+</div>
+
+<div class="cart">
+  <div class="cart-img">
+     <img src="./assets/img/mkbok.jpeg" alt="">
+  </div>
+  <div class="cart-title">
+      <h4>Category Name</h4>
+      <h5>100 Products</h5>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="features-product">
+        <div class="products-head">
+          <h2 class="head-title">
+            <span>Categories</span>
+          </h2>
+        </div>
+          <div class="features-cart">
+
+              <div class="cart">
+                  <div class="img-button">
+                    <div class="f-img">
+                      <img src="./assets/img/product-1.jpg" alt="">
+                    </div>
+                    <div class="button">
+                      <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                      <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                      <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                      <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                  </div>
+                  <div class="f-cart-title">
+                    <h3>Product Name Goes Here</h3>
+                    <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                    <div class="star">
+                      <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="cart">
+                <div class="img-button">
+                  <div class="f-img">
+                    <img src="./assets/img/product-1.jpg" alt="">
+                  </div>
+                  <div class="button">
+                    <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                    <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </div>
+                </div>
+                <div class="f-cart-title">
+                  <h3>Product Name Goes Here</h3>
+                  <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                  <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+            </div>
+
+            <div class="cart">
+              <div class="img-button">
+                <div class="f-img">
+                  <img src="./assets/img/product-1.jpg" alt="">
+                </div>
+                <div class="button">
+                  <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                  <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                  <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </div>
+              <div class="f-cart-title">
+                <h3>Product Name Goes Here</h3>
+                <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+          </div>
+
+          <div class="cart">
+            <div class="img-button">
+              <div class="f-img">
+                <img src="./assets/img/product-1.jpg" alt="">
+              </div>
+              <div class="button">
+                <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+            </div>
+            <div class="f-cart-title">
+              <h3>Product Name Goes Here</h3>
+              <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="cart">
+          <div class="img-button">
+            <div class="f-img">
+              <img src="./assets/img/product-1.jpg" alt="">
+            </div>
+            <div class="button">
+              <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+              <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+              <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+          <div class="f-cart-title">
+            <h3>Product Name Goes Here</h3>
+            <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+            <div class="star">
+              <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+      </div>
+
+      <div class="cart">
+        <div class="img-button">
+          <div class="f-img">
+            <img src="./assets/img/product-1.jpg" alt="">
+          </div>
+          <div class="button">
+            <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+            <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+            <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+        <div class="f-cart-title">
+          <h3>Product Name Goes Here</h3>
+          <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+    </div>
+
+    <div class="cart">
+      <div class="img-button">
+        <div class="f-img">
+          <img src="./assets/img/product-1.jpg" alt="">
+        </div>
+        <div class="button">
+          <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+          <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+          <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+      <div class="f-cart-title">
+        <h3>Product Name Goes Here</h3>
+        <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+  </div>
+  <div class="cart">
+    <div class="img-button">
+      <div class="f-img">
+        <img src="./assets/img/product-1.jpg" alt="">
+      </div>
+      <div class="button">
+        <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+        <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+        <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </div>
+    <div class="f-cart-title">
+      <h3>Product Name Goes Here</h3>
+      <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+      <div class="star">
+        <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+    </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="special-offer-two">
+        <div class="special-img mt-image">
+          <img src="./assets/img/offer-1.jpg" alt="">
+          <div class="special-text">
+            <h4>Save 20%</h4>
+            <h5>Special Offer</h5>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="special-img">
+          <img src="./assets/img/offer-2.jpg" alt="">
+          <div class="special-text">
+            <h4>Save 20%</h4>
+            <h5>Special Offer</h5>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-product">
+        <div class="products-head">
+          <h2 class="head-title">
+            <span>Categories</span>
+          </h2>
+        </div>
+          <div class="features-cart">
+
+              <div class="cart">
+                  <div class="img-button">
+                    <div class="f-img">
+                      <img src="./assets/img/product-1.jpg" alt="">
+                    </div>
+                    <div class="button">
+                      <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                      <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                      <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                      <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                  </div>
+                  <div class="f-cart-title">
+                    <h3>Product Name Goes Here</h3>
+                    <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                    <div class="star">
+                      <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="cart">
+                <div class="img-button">
+                  <div class="f-img">
+                    <img src="./assets/img/product-1.jpg" alt="">
+                  </div>
+                  <div class="button">
+                    <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                    <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </div>
+                </div>
+                <div class="f-cart-title">
+                  <h3>Product Name Goes Here</h3>
+                  <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                  <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+            </div>
+
+            <div class="cart">
+              <div class="img-button">
+                <div class="f-img">
+                  <img src="./assets/img/product-1.jpg" alt="">
+                </div>
+                <div class="button">
+                  <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                  <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                  <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </div>
+              <div class="f-cart-title">
+                <h3>Product Name Goes Here</h3>
+                <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+          </div>
+
+          <div class="cart">
+            <div class="img-button">
+              <div class="f-img">
+                <img src="./assets/img/product-1.jpg" alt="">
+              </div>
+              <div class="button">
+                <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+                <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+                <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+            </div>
+            <div class="f-cart-title">
+              <h3>Product Name Goes Here</h3>
+              <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="cart">
+          <div class="img-button">
+            <div class="f-img">
+              <img src="./assets/img/product-1.jpg" alt="">
+            </div>
+            <div class="button">
+              <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+              <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+              <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+          <div class="f-cart-title">
+            <h3>Product Name Goes Here</h3>
+            <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+            <div class="star">
+              <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+      </div>
+
+      <div class="cart">
+        <div class="img-button">
+          <div class="f-img">
+            <img src="./assets/img/product-1.jpg" alt="">
+          </div>
+          <div class="button">
+            <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+            <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+            <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+        <div class="f-cart-title">
+          <h3>Product Name Goes Here</h3>
+          <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+    </div>
+
+    <div class="cart">
+      <div class="img-button">
+        <div class="f-img">
+          <img src="./assets/img/product-1.jpg" alt="">
+        </div>
+        <div class="button">
+          <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+          <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+          <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+      <div class="f-cart-title">
+        <h3>Product Name Goes Here</h3>
+        <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+        <div class="star">
+          <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+  </div>
+  <div class="cart">
+    <div class="img-button">
+      <div class="f-img">
+        <img src="./assets/img/product-1.jpg" alt="">
+      </div>
+      <div class="button">
+        <a class="tag-one" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="tag-two" href=""><i class="fa-regular fa-heart"></i></a>
+        <a class="tag-tree" href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+        <a class="tag-four" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </div>
+    <div class="f-cart-title">
+      <h3>Product Name Goes Here</h3>
+      <span>$123</span> <span style="text-decoration: line-through;">$145</span>
+      <div class="star">
+        <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+    </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./assets/img/sponsor.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-1.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-2.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-3.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-4.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-6.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-7.jpg" alt=""></div>
+        <div class="item"><img src="./assets/img/vendor-8.jpg" alt=""></div>
+    </div>
+
+
+ 
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="touch">
+              <h3>GET IN TOUCH</h3>
+              <h4>No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</h4>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> <span>123 Street, New York, USA</span>
+              </div>
+              <div class="mail">
+                <i class="fa-solid fa-envelope"></i> <span>mail@domain.com</span>
+              </div>
+              <div class="number-fot">
+                <i class="fa-solid fa-phone"></i> <span>+123456789</span>
+              </div>
+            </div>
+
+            <div class="quick">
+              <h3>QUICK SHOP</h3>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Our Shop</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shop Detail</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shopping Cart</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Checkout</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Contact US</a></li>
+              </ul>
+            </div>
+
+            <div class="myaccount">
+              <h3>MY ACCOUNT</h3>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Our Shop</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shop Detail</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shopping Cart</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Checkout</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Contact US</a></li>
+              </ul>
+            </div>
+
+            <div class="newsletter">
+              <h3>NEWSLETTER</h3>
+              <h4>Duo stet tempor ipsum sit amet magna ipsum tempor est</h4>
+              <div class="input">
+                <input type="text" placeholder="Your Email Adres">
+                <a class="signup" href="">Sign Up</a>
+              </div>
+                
+          
+              <h5>Follow Us</h5>
+              <div class="social">
+                <a class="social-i" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="domain-cart">
+            <h3>© <a href="">Domain</a>. All Rights Reserved. Designed by <a href="">HTML Codex</a></h3>
+            <img src="./assets/img/payments.png" alt="">
+        </div>
+      </div>
+      </footer>
+
+      <div id="back-to-top">
+        <button><i class="fa-solid fa-angles-up"></i></button>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+      <script src="./assets/js/owl.carousel.min.js"></script>
+      <script src="./assets/js/main.js"></script>
+      <script src="./assets/js/smstfyv.js"></script>
+</body>
+
+</html>

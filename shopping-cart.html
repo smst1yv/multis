@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/shopping-cart.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+
+    <div class="account-container">
+        <div class="account">
+            <div class="about">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="aue">
+                <div id="myaccount" class="myaccount" onclick="toggleDropdown()">
+                    <a id="ac" class="ac" href="javascript:void(0)">MyAccount <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="account-dropdown" class="account-dropdown">
+                        <a class="sigin" href="#">Sign In</a>
+                        <a class="sigup" href="#">Sign Up</a>
+                    </div>
+                </div>
+                <div id="valyuta" class="valyuta" onclick="valy()">
+                    <a id="vl" class="vl" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="vl-dropdown" class="vl-dropdown">
+                        <a class="eur" href="#">EUR</a>
+                        <a class="gbp" href="#">GBP</a>
+                        <a class="cap" href="#">CAP</a>
+                    </div>
+                </div>
+
+                <div class="lang" onclick="langdr()">
+                    <a class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <a class="ru" href="#">RU</a>
+                        <a class="az" href="#">AZ</a>
+                    </div>
+                </div>
+        </div>
+        <div class="shop-favorite">
+            <i class="fa-solid fa-heart"></i> <span class="heart-price">0</span>
+            <i class="fa-solid fa-cart-shopping"></i> <span class="shop-price">0</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="multishop" id="multishop">
+        <div class="multishop-logo-container">
+            <div class="logo">
+                <a href="#">
+                    <span class="multi">MULTI</span>
+                    <span class="shop">SHOP</span>
+                </a>
+            </div>
+
+            <div class="multi-menu-container">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./shop-detail.html">Shop Detali</a></li>
+                    <li onclick="showInput()" id="dd-open"><a style="display: flex" href="javascript:void(0)">Pages <i style="position: relative; left: 5px;" class="fa-solid fa-sort-down"></i></a></li>
+                    <div style="margin-bottom: 5px;" id="dd-menu" class="dd-menu">
+                      <ul>
+                        <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                        <li><a href="./checkout.html">Checkout</a></li>
+                      </ul>
+                    </div>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="search">
+                <input class="search-input" type="text" placeholder="Search For Products">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+    
+            <div class="call-container">
+                <h2>Customer Service</h2>
+                <h3>050 660 34 04</h3>
+            </div>
+            <div class="hamburger-menu">
+                <i onclick="increaseHeight()" id="hamburger" class="fa-solid fa-bars hamburger"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-bar">
+            <div class="menu-bar-container">
+                <div  class="menu-categories">
+                    <a onclick="dropen()" id="drmenuu" class="categories-button" href="#"><i class="fa-solid fa-bars"></i> Categories <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="dropdown-menu-bar" class="dropdown-menu-bar">
+                        <ul>
+                            <li><a onclick="dresses()"  id="dresses" href="javascript:void(0)">Dresses <i style="margin-left: 170px;" class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="">Shirts</a></li>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sleepwear</a></li>
+                            <li><a href="">Sportswear</a></li>
+                            <li><a href="">JumpSuits</a></li>
+                            <li><a href="">Blazers</a></li>
+                            <li><a href="">Jazkets</a></li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="drop-drop-menu" class="drop-drop-menu" >
+                    <ul>
+                        <li><a href="">Men's Dresses</a></li>
+                        <li><a href="">Women's Dresses</a></li>
+                        <li><a href="">Baby's Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bar-two" id="menu-bar-two">
+                    <ul>
+                        <li><a style="margin-left: 40px;" href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./shop-detail.html">Shop Detail</a></li>
+                        <li><a id="active" href="javascript:void(0)" onclick="pgop()" >Pages <i class="fa-solid fa-angle-down"></i></a></li>
+                        <div class="pages-dropdown" id="pg-dropdown"> 
+                            <ul>
+                                <li class="li-one"><a  href="./shopping-cart.html">Shopping Cart</a></li>
+                                <li class="li-two"><a href="./checkout.html">Check Out</a></li>
+                            </ul>
+                        </div>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="basket-favorites">
+                <i class="fa-solid fa-heart"></i><span>0</span>
+                <i class="fa-solid fa-cart-shopping"></i><span>0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="list-container">
+        <ul>
+            <li><a href="">Home /</a></li>
+            <li><a href="">Shop /</a></li>
+            <li><a href="">Shopping Cart</a></li>
+        </ul>
+    </div>
+
+    <div class="product-calc-container">
+        <div class="product-calc">
+            <div class="number-product">
+             <table class="table">
+             <thead class="thead-one">
+                <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+             </thead>   
+             <tbody class="tbody">
+                <tr>
+                    <td>
+                    <img style="width: 50px;" src="./assets/img/akilli.png" alt="">
+                    Product Name
+                    </td>
+                    <td>$150</td>
+                    <td class="button-td">
+                       <div class="td-button-cont">
+                        <div class="minus-btn-cont">
+                            <button class="minus-btn" id="minus-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+                        <input id="tblinput" class="tbl" type="text" value="1">
+                        <div class="plus-btn-cont">
+                            <button class="plus-btn" id="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                       </div> 
+                    </td>
+                    <td>$150</td>
+                    <td class="remove-btn">
+                        <button class="rmv-btn"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <img style="width: 50px;" src="./assets/img/akilli.png" alt="">
+                    Product Name
+                    </td>
+                    <td>$150</td>
+                    <td class="button-td">
+                       <div class="td-button-cont">
+                        <div class="minus-btn-cont">
+                            <button class="minus-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+                        <input class="tbl" type="text" value="1">
+                        <div class="plus-btn-cont">
+                            <button class="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                       </div> 
+                    </td>
+                    <td>$150</td>
+                    <td class="remove-btn">
+                        <button class="rmv-btn"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <img style="width: 50px;" src="./assets/img/akilli.png" alt="">
+                    Product Name
+                    </td>
+                    <td>$150</td>
+                    <td class="button-td">
+                       <div class="td-button-cont">
+                        <div class="minus-btn-cont">
+                            <button class="minus-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+                        <input class="tbl" type="text" value="1">
+                        <div class="plus-btn-cont">
+                            <button class="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                       </div> 
+                    </td>
+                    <td>$150</td>
+                    <td class="remove-btn">
+                        <button class="rmv-btn"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <img style="width: 50px;" src="./assets/img/akilli.png" alt="">
+                    Product Name
+                    </td>
+                    <td>$150</td>
+                    <td class="button-td">
+                       <div class="td-button-cont">
+                        <div class="minus-btn-cont">
+                            <button class="minus-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+                        <input class="tbl" type="text" value="1">
+                        <div class="plus-btn-cont">
+                            <button class="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                       </div> 
+                    </td>
+                    <td>$150</td>
+                    <td class="remove-btn">
+                        <button class="rmv-btn"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <img style="width: 50px;" src="./assets/img/akilli.png" alt="">
+                    Product Name
+                    </td>
+                    <td>$150</td>
+                    <td class="button-td">
+                       <div class="td-button-cont">
+                        <div class="minus-btn-cont">
+                            <button class="minus-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+                        <input class="tbl" type="text" value="1">
+                        <div class="plus-btn-cont">
+                            <button class="plus-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                       </div> 
+                    </td>
+                    <td>$150</td>
+                    <td class="remove-btn">
+                        <button class="rmv-btn"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+
+
+             </tbody>
+             </table>   
+            </div>
+
+            <div class="total-product">
+                <form action="#">
+                    <div class="cupon-cont">
+                        <input type="text" placeholder="Coupon Code">
+                        <div class="cupon-apply-con">
+                         <button class="btn-cpn">Apply Coupon</button>
+                        </div>
+                    </div>
+                </form>
+
+                <h5 class="sm-head">
+                    <span>Cart Summary</span>
+                </h5>
+
+                <div class="subtotal-cont">
+                    <div class="sub">
+                        <div class="sub-head">
+                            <h6>Subtotal</h6>
+                            <h6>$150</h6>
+                        </div>
+                        <div style="margin-top: 2rem;" class="sub-head">
+                            <h6 style="font-weight: medium;">Shipping</h6>
+                            <h6 style="font-weight: medium;">$10</h6>
+                        </div>
+                    </div>
+                    <div class="alt">
+                        <div class="alt-total">
+                            <h5>Total</h5>
+                            <h5>$160</h5>
+                        </div>
+                        <button class="sell">Proceed To Checkout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="touch">
+              <h3>GET IN TOUCH</h3>
+              <h4>No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</h4>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> <span>123 Street, New York, USA</span>
+              </div>
+              <div class="mail">
+                <i class="fa-solid fa-envelope"></i> <span>mail@domain.com</span>
+              </div>
+              <div class="number-fot">
+                <i class="fa-solid fa-phone"></i> <span>+123456789</span>
+              </div>
+            </div>
+      
+            <div class="quick">
+              <h3>QUICK SHOP</h3>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Our Shop</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shop Detail</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shopping Cart</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Checkout</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Contact US</a></li>
+              </ul>
+            </div>
+      
+            <div class="myaccount">
+              <h3>MY ACCOUNT</h3>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Our Shop</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shop Detail</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Shopping Cart</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Checkout</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Contact US</a></li>
+              </ul>
+            </div>
+      
+            <div class="newsletter">
+              <h3>NEWSLETTER</h3>
+              <h4>Duo stet tempor ipsum sit amet magna ipsum tempor est</h4>
+              <div class="input">
+                <input type="text" placeholder="Your Email Adres">
+                <a class="signup" href="">Sign Up</a>
+              </div>
+                
+          
+              <h5>Follow Us</h5>
+              <div class="social">
+                <a class="social-i" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a class="social-i" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+        </div>
+      
+        <div class="domain-cart">
+            <h3>© <a href="">Domain</a>. All Rights Reserved. Designed by <a href="">HTML Codex</a></h3>
+            <img src="./assets/img/payments.png" alt="">
+        </div>
+      </div>
+      </footer>
+
+    <script src="./assets/js/shopping-cart.js"></script>
+</body>
+</html>
