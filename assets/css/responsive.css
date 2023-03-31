@@ -795,6 +795,20 @@
         .contact-container{
             max-width: 806px;
         }
+        .billing .billing-check .billing-form{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .billing .billing-check .billing-form .billing-group{
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        .billing .billing-check .billing-form .billing-slck{
+            display: flex;
+            flex-direction: column;
+        }
 }
 
 @media(max-width:806px){

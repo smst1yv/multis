@@ -192,3 +192,19 @@ rev.addEventListener("click", () => {
   revtab.style.display = 'flex';
 });
 
+
+  //---------------back-to-top
+  window.addEventListener('scroll', function() {
+    var button = document.getElementById('back-to-top');
+    if (window.pageYOffset > 100) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
+  
+  var button = document.getElementById('back-to-top');
+  button.addEventListener('click', function() {
+    scrollToTop();
+  });
+
