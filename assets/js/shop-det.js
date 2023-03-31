@@ -194,6 +194,14 @@ rev.addEventListener("click", () => {
 
 
   //---------------back-to-top
+  function scrollToTop() {
+    const position = window.pageYOffset;
+    if (position > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, position - Math.max(position / 10, 30));
+    }
+  }
+
   window.addEventListener('scroll', function() {
     var button = document.getElementById('back-to-top');
     if (window.pageYOffset > 100) {
