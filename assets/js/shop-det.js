@@ -9,8 +9,8 @@ function toggleDropdown() {
 }
 
 window.addEventListener('click', function(event) {
-    if (!acdropdown.contains(event.target)) {
-        acdropdown.classList.remove('open');
+    if (!account.contains(event.target)) {
+        acdropdown.classList.remove('active');
     }
 });
 
@@ -27,8 +27,8 @@ function valy(){
 }
 
 window.addEventListener('click', function(event) {
-    if (!valdrop.contains(event.target)) {
-        valdrop.classList.remove('open');
+    if (!vl.contains(event.target)) {
+        valdrop.classList.remove('active');
     }
 });
 
@@ -45,8 +45,8 @@ function langdr(){
 }
 
 window.addEventListener('click', function(event) {
-    if (!langdrop.contains(event.target)) {
-        langdrop.classList.remove('open');
+    if (!en.contains(event.target)) {
+        langdrop.classList.remove('active');
     }
 });
 
@@ -93,15 +93,16 @@ window.addEventListener('click', function(event) {
 const hamburger = document.getElementById('hamburger');
 
 function increaseHeight() {
-    var div = document.getElementById("multishop");
-    var ddmenu2 = document.getElementById("dd-menu");
-    if (div.style.height === "217px") {
-      div.style.height = "70px";
-      ddmenu2.style.display = 'none';
-    } else {
-      div.style.height = "217px";
-    }
+  var div = document.getElementById("multishop");
+  var ddmenu2 = document.getElementById("dd-menu");
+  if (div.style.height === "217px") {
+    div.style.height = "70px";
+    ddmenu2.style.display = 'none';
+  } else {
+    div.style.height = "217px";
+    ddmenu2.style.display = 'none';
   }
+}
 
   //-----------dd-------------------
 

@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="lang" onclick="langdr()">
-                    <a class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                    <a id="en" class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
                     <div id="lang-dropdown" class="lang-dropdown">
                         <a class="ru" href="#">RU</a>
                         <a class="az" href="#">AZ</a>
@@ -129,7 +129,7 @@
                         <li><a style="margin-left: 40px;" href="./index.html">Home</a></li>
                         <li><a href="./shop.html">Shop</a></li>
                         <li><a href="./shop-detail.html">Shop Detail</a></li>
-                        <li><a id="active" href="javascript:void(0)" onclick="pgop()" >Pages <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li onclick="pgop()"><a id="active" class="hoverbtn" href="javascript:void(0)">Pages <i class="fa-solid fa-angle-down"></i></a></li>
                         <div class="pages-dropdown" id="pg-dropdown"> 
                             <ul>
                                 <li class="li-one"><a href="./shopping-cart.html">Shopping Cart</a></li>
@@ -213,21 +213,79 @@
                     </div>
                     <div class="billing-ckecked">
                         <div class="checkbok-cl">
-                            <input type="checkbox"  id="cl-check">
-                            <label for="">Create an account</label>
+                            <input class="radio-input" type="checkbox"  id="cl-check-one">
+                            <label for="cl-check-one" class="radio"></label>
+                            <label for="cl-check-one" style="position: relative;left: -19px;top: -2px; color: #6c757d;">Create an account</label>
                         </div>
                     </div>
                     <div class="billing-ckecked">
                         <div class="checkbok-cl">
-                            <input type="checkbox"  id="cl-check">
-                            <label for="">Ship to different address</label>
+                            <input class="radio-input-two" type="checkbox"  id="cl-check-two">
+                            <label for="cl-check-two" class="radio-two"></label>
+                            <label for="cl-check-two" style="position: relative;left: -19px;top: -2px; color: #6c757d;">Create an account</label>
                         </div>
                     </div>
 
                 </div>
-            </div>
 
-        </div>
+                <div style="margin-top: 3rem; margin-bottom: 2rem;" id="billing-form" class="billing-head">
+                    <h5>
+                        <span>Shipping Adres</span>
+                    </h5>
+                </div>
+
+                    <div class="billing-form" id="billing-form-two">
+
+                        <div class="billing-group">
+                            <label>First Name</label>
+                            <input class="billing-control" type="text" placeholder="Sexavet">
+                        </div>
+                        <div class="billing-group">
+                            <label>Last Name</label>
+                            <input class="billing-control" type="text" placeholder="Mustafayev">
+                        </div>
+                        <div class="billing-group">
+                            <label>Email</label>
+                            <input class="billing-control" type="text" placeholder="mail@mail.ru">
+                        </div>
+                        <div class="billing-group">
+                            <label>Mobile No</label>
+                            <input class="billing-control" type="text" placeholder="+994506603404">
+                        </div>
+                        <div class="billing-group">
+                            <label>Adress Line 1</label>
+                            <input class="billing-control" type="text" placeholder="AZ-Qakh">
+                        </div>
+                        <div class="billing-group">
+                            <label>Adress Line 2</label>
+                            <input class="billing-control" type="text" placeholder="AZ-QAKH">
+                        </div>
+                        <div class="billing-group billing-slck">
+                            <label>Country</label>
+                            <select class="billing-select" name="" id="">
+                                <option selected >Azerbaijan</option>
+                                <option selected >Turkiye</option>
+                                <option selected >Pakistan</option>
+                                <option selected >Dubai</option>
+                            </select>
+                        </div>
+                        <div class="billing-group">
+                            <label>City</label>
+                            <input class="billing-control" type="text" placeholder="QAKH">
+                        </div>
+                        <div class="billing-group">
+                            <label>State</label>
+                            <input class="billing-control" type="text" placeholder="QAKH">
+                        </div>
+                        <div class="billing-group">
+                            <label>Zip Code</label>
+                            <input class="billing-control" type="text" placeholder="123">
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         
 
         <div class="order">
 
@@ -283,22 +341,28 @@
                 <div class="payment-cart">
                     <div class="paypal">
                         <div class="paypal-control">
-                            <input name="payment" type="radio">
-                            <label for="paypal">Paypal</label>
+                            <!-- <input name="payment" type="radio">
+                            <label for="paypal">Paypal</label> -->
+
+                        <input class="radio-input" type="radio" name="payment" id="xs">
+                        <label class="radio" for="xs"></label>
+                        <label style="color: #6c757d;" for="xs">Paypal</label>
                         </div>
                     </div>
 
                     <div class="paypal">
                         <div class="paypal-control">
-                            <input name="payment" type="radio">
-                            <label for="direct">Direct Check</label>
+                            <input class="radio-input" type="radio" name="payment" id="direct">
+                        <label class="radio" for="direct"></label>
+                        <label style="color: #6c757d;" for="direct">Direct Check</label>
                         </div>
                     </div>
 
                     <div style="margin-bottom: 1.5rem;" class="paypal">
                         <div class="paypal-control">
-                            <input name="payment" type="radio">
-                            <label for="bank">Bank Transfer</label>
+                            <input class="radio-input" type="radio" name="payment" id="transfer">
+                        <label class="radio" for="transfer"></label>
+                        <label style="color: #6c757d;" for="transfer">Bank Transfer</label>
                         </div>
                     </div>
                     <button>Place Order</button>

@@ -34,8 +34,8 @@
                         <a class="sigup" href="#">Sign Up</a>
                     </div>
                 </div>
-                <div id="valyuta" class="valyuta" onclick="valy()">
-                    <a id="vl" class="vl" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
+                <div id="valyuta" class="valyuta" >
+                    <a onclick="valy()" id="vl" class="vl" href="javascript:void(0)">USD <i class="fa-solid fa-sort-down"></i></a>
                     <div id="vl-dropdown" class="vl-dropdown">
                         <a class="eur" href="#">EUR</a>
                         <a class="gbp" href="#">GBP</a>
@@ -44,12 +44,12 @@
                 </div>
 
                 <div class="lang" onclick="langdr()">
-                    <a class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
-                    <div id="lang-dropdown" class="lang-dropdown">
-                        <a class="ru" href="#">RU</a>
-                        <a class="az" href="#">AZ</a>
-                    </div>
-                </div>
+                  <a id="en" class="en" href="javascript:void(0)">EN <i class="fa-solid fa-sort-down"></i></a>
+                  <div id="lang-dropdown" class="lang-dropdown">
+                      <a class="ru" href="#">RU</a>
+                      <a class="az" href="#">AZ</a>
+                  </div>
+              </div>
         </div>
         <div class="shop-favorite">
             <i class="fa-solid fa-heart"></i> <span class="heart-price">0</span>
@@ -103,7 +103,7 @@
         <div class="menu-bar">
             <div class="menu-bar-container">
                 <div  class="menu-categories">
-                    <a onclick="dropen()" class="categories-button" href="#"><i class="fa-solid fa-bars"></i> Categories <i class="fa-solid fa-angle-down"></i></a>
+                    <a id="dropen" onclick="dropen()" class="categories-button" href="#"><i class="fa-solid fa-bars"></i> Categories <i class="fa-solid fa-angle-down"></i></a>
                     <div id="dropdown-menu-bar" class="dropdown-menu-bar">
                         <ul>
                             <li><a onclick="dresses()"  id="dresses" href="javascript:void(0)">Dresses <i style="margin-left: 170px;" class="fa-solid fa-angle-right"></i></a></li>

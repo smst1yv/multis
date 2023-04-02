@@ -559,7 +559,7 @@ body{
 .multishop .multishop-logo-container .multi-menu-container{
     position: absolute;
     top: 72px;
-    left: 48px;
+    width: 100%;
 }
 
 .multishop .multi-menu-container  ul li{
@@ -970,7 +970,7 @@ body{
     z-index: 1;
     display: block;
     min-height: 1.5rem;
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 .all-price-container .all-price .custom-one input{
@@ -990,7 +990,6 @@ body{
 }
 
 .all-price-container .all-price .custom-one .radio-input:checked ~ label:nth-child(2) {
-    background-color: yellow;
     border: 0;
     position: relative;
 }
@@ -998,12 +997,12 @@ body{
 .all-price-container .all-price .custom-one .radio-input:checked ~ label:nth-child(2)::before{
     content: '';
     display: inline-block;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 25.5%;
-    left: 25.5%;
-    background-image: url(../img/green-check-mark-theme-checkbox-user-interface-line-logo-symbol-circle-png-clipart.jpg);
+    top: 0;
+    left: 0;
+    background-image: url(../img/Screenshot\ 2023-03-28\ 192234.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1048,7 +1047,7 @@ body{
     z-index: 1;
     display: block;
     min-height: 1.5rem;
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 .all-price-container .all-color .custom-one input{
@@ -1132,7 +1131,7 @@ body{
     z-index: 1;
     display: block;
     min-height: 1.5rem;
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 .all-price-container .all-size .custom-one input{
@@ -1509,4 +1508,30 @@ body{
 
 #back-to-top button i{
     color: #3d464d;
+}
+
+
+.multishop .multi-menu-container  ul .dd-menu ul li a{
+    display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }
+
+.multishop .multi-menu-container ul .dd-menu{
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    background-color: #ffd333;
+    display: none;
 }

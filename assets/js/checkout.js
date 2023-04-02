@@ -83,10 +83,9 @@ function pgop(){
 
 window.addEventListener('click', function(event) {
   if (!pages.contains(event.target)) {
-      pgdr.classList.remove('pg-open');
+      pgdr.getElementById.remove('pg-cls');
   }
 });
-
 //-------------------------------------
 
 const hamburger = document.getElementById('hamburger');
@@ -99,6 +98,7 @@ function increaseHeight() {
       ddmenu2.style.display = 'none';
     } else {
       div.style.height = "217px";
+      ddmenu2.style.display = 'none';
     }
   }
 
@@ -138,4 +138,19 @@ function increaseHeight() {
   var button = document.getElementById('back-to-top');
   button.addEventListener('click', function() {
     scrollToTop();
+  });
+
+  //--------------check
+  const checkbtn = document.getElementById("cl-check-two");
+  const bfone = document.getElementById("billing-form");
+  const bftwo = document.getElementById("billing-form-two");
+
+  checkbtn.addEventListener("click", () => {
+    if (bfone.style.display === "flex" && bftwo.style.display === "flex") {
+      bfone.style.display = "none";
+      bftwo.style.display = "none";
+    } else {
+      bfone.style.display = "flex";
+      bftwo.style.display = "flex";
+    }
   });

@@ -490,9 +490,17 @@ body{
     z-index: 55;
 }
 
+
+
+.menu-bar-container .menu-bar-two ul li .hovrbtn:hover{
+    color: red;
+}
+
+
 .menu-bar-container .menu-bar-two .pg-open{
     display: flex;
 }
+
 
 .menu-bar-container .menu-bar-two .pages-dropdown ul {
     display: block;
@@ -571,7 +579,7 @@ body{
 .multishop .multishop-logo-container .multi-menu-container{
     position: absolute;
     top: 72px;
-    left: 48px;
+    width: 100%;
 }
 
 .multishop .multi-menu-container  ul li{
@@ -636,14 +644,14 @@ body{
 }
 
 .billing .billing-check{
-    padding: 30px;
     margin-bottom: 3rem;
-    background: #fff;
 }
 
 .billing .billing-check .billing-form{
     display: flex;
     flex-wrap: wrap;
+    background: #fff;
+    padding: 30px;
 }
 .billing .billing-check .billing-form .billing-group{
     margin-bottom: 1rem;
@@ -710,6 +718,15 @@ body{
     flex: 0 0 100%;
     max-width: 100%
 }
+
+.billing  #billing-form{
+   display: none;
+}
+
+.billing  #billing-form-two{
+    display: none;
+ }
+
 .billing .billing-check .billing-form  .billing-ckecked .checkbok-cl{
     position: relative;
     z-index: 1;
@@ -718,23 +735,94 @@ body{
     padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
-.billing .billing-check .billing-form  .billing-ckecked .checkbok-cl input{
+
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl  input{
     position: absolute;
     left: 0;
-    /* z-index: -1; */
+    z-index: -1;
     width: 1rem;
     height: 1.25rem;
-    /* opacity: 0; */
 }
-.billing .billing-check .billing-form .billing-ckecked .checkbok-cl label{
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: #adb5bd solid 1px;
+    border-radius: 2px;
     position: relative;
-    margin-bottom: 0;
-    vertical-align: top;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #6c757d;
-    text-align: left;
+    left: -23px;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input:checked ~ label:nth-child(2) {
+    border: 0;
+    position: relative;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input:checked ~ label:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Screenshot\ 2023-03-28\ 192234.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input:checked ~ label:nth-child(3){
+    background-color: transparent!important;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input{
+    display: none;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl  input{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-two{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: #adb5bd solid 1px;
+    border-radius: 2px;
+    position: relative;
+    left: -23px;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input-two:checked ~ label:nth-child(2) {
+    border: 0;
+    position: relative;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input-two:checked ~ label:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Screenshot\ 2023-03-28\ 192234.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input-two:checked ~ label:nth-child(3){
+    background-color: transparent!important;
+}
+
+.billing .billing-check .billing-form .billing-ckecked .checkbok-cl .radio-input-two{
+    display: none;
 }
 
 .adress-total .order{
@@ -886,14 +974,15 @@ body{
 .order .payment .payment-cart .paypal .paypal-control input{
     position: absolute;
     left: 0;
-    /* z-index: -1; */
+    z-index: -1;
     width: 1rem;
     height: 1.25rem;
     /* opacity: 0; */
+    overflow: visible;
 }
 
 .order .payment .payment-cart .paypal .paypal-control label{
-    position: relative;
+    /* position: relative;
     margin-bottom: 0;
     vertical-align: top;
     display: inline-block;
@@ -901,7 +990,29 @@ body{
     font-weight: 400;
     line-height: 1.5;
     color: #6c757d;
-    text-align: left;
+    text-align: left; */
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    left: -20px;
+}
+.order .payment .payment-cart .paypal .paypal-control .radio{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: #adb5bd solid 1px;
+    border-radius: 50%;
+    position: relative;
+    left: -20px;
+}
+
+.order .payment .payment-cart .paypal .paypal-control .radio-input:checked ~ label{
+    border-color: yellow;
+    border-width: 5px;
+}
+
+.order .payment .payment-cart .paypal .paypal-control .radio-input{
+    display: none;
 }
 
 .order .payment button{
@@ -1146,3 +1257,27 @@ body{
 #back-to-top button i{
     color: #3d464d;
 }
+.multishop .multi-menu-container ul .dd-menu{
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    background-color: #ffd333;
+    display: none;
+}
+
+.multishop .multi-menu-container  ul .dd-menu ul li a{
+    display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }

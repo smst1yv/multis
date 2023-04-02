@@ -572,8 +572,7 @@ body{
 .multishop .multishop-logo-container .multi-menu-container{
     position: absolute;
     top: 72px;
-    left: 48px;
-    width: 90%;
+    width: 100%;
 }
 
 .multishop .multi-menu-container  ul li{

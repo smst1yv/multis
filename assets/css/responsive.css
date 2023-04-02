@@ -87,13 +87,16 @@
     .contact-container{
         max-width: 1200px;
     }
+    .list-container{
+        max-width: 1200px;
+    }
 }
 
 
 @media(max-width:1215px){
     .quality-servic-container img{
     width: 230px;
-    height: 90p
+    height: 90px
     }
 }
 
@@ -154,6 +157,9 @@
         max-width: 1100px;
     }
     .contact-container{
+        max-width: 1100px;
+    }
+    .list-container{
         max-width: 1100px;
     }
 }
@@ -262,6 +268,9 @@
         max-width: 1000px;
     }
     .contact-container{
+        max-width: 1000px;
+    }
+    .list-container{
         max-width: 1000px;
     }
 }
@@ -499,7 +508,10 @@
             flex: 100%;
             max-width: 100%;
         }
-}
+        .list-container{
+            max-width: 900px;
+        }
+    }
 
 
 
@@ -708,6 +720,9 @@
         .contact-container{
             max-width: 897px;
         }
+        .list-container{
+            max-width: 897px;
+        }
 }
 
 @media(max-width:902px){
@@ -808,6 +823,13 @@
         .billing .billing-check .billing-form .billing-slck{
             display: flex;
             flex-direction: column;
+        }
+        .list-container{
+            max-width: 806px;
+        }
+
+        .multishop-logo-container{
+            max-width: 806px;
         }
 }
 
@@ -959,6 +981,13 @@
         .show-sh{
             display: flex;
         }
+
+        .list-container{
+            max-width: 702px;
+        }
+        .multishop-logo-container{
+            max-width: 702px;
+        }
     }
 
 @media (max-width:711px){
@@ -1037,6 +1066,14 @@
         }
 
         .contact-container{
+            max-width: 630px;
+        }
+
+        .list-container{
+            max-width: 630px;
+        }
+
+        .multishop-logo-container{
             max-width: 630px;
         }
 }
@@ -1146,6 +1183,13 @@
         .contact-container{
             max-width: 550px;
         }
+
+        .list-container{
+            max-width: 550px;
+        }
+        .multishop-logo-container{
+            max-width: 550px;
+        }
 }
 
 @media (max-width:551px){
@@ -1240,6 +1284,9 @@
         .contact-container{
             max-width: 469px;
         }
+        .list-container{
+            max-width: 469px;
+        }
 }
 
 @media (max-width:488px){
@@ -1313,6 +1360,9 @@
         }
 
         .contact-container{
+            max-width: 390px;
+        }
+        .list-container{
             max-width: 390px;
         }
 }
@@ -1413,6 +1463,16 @@
         .contact-container{
             max-width: 340px;
         }
+
+        .list-container{
+            max-width: 340px;
+        }
+}
+
+@media(max-width:394px){
+    .quality-servic-container .return{
+        padding-right: 15px;
+    }
 }
 
 @media(max-width:354px){
@@ -1505,6 +1565,9 @@
         .contact-container .contact-head{
             font-size: 20px;
         }
+        .list-container{
+            max-width: 280px;
+        }
 }
 
 @media(max-width:300px){
@@ -1577,6 +1640,9 @@
         }
 
         .contact-container{
+            max-width: 249px;
+        }
+        .list-container{
             max-width: 249px;
         }
 }

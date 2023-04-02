@@ -9,13 +9,13 @@ function toggleDropdown() {
 }
 
 window.addEventListener('click', function(event) {
-    if (!acdropdown.contains(event.target)) {
-        acdropdown.classList.remove('open');
+    if (!account.contains(event.target)) {
+        acdropdown.classList.remove('active');
     }
 });
 
 
-
+//----------------vl
 const vl = document.getElementById('vl');
 const valdrop = document.getElementById('vl-dropdown')
 
@@ -27,12 +27,11 @@ function valy(){
 }
 
 window.addEventListener('click', function(event) {
-    if (!valdrop.contains(event.target)) {
-        valdrop.classList.remove('open');
+    if (!vl.contains(event.target)) {
+        valdrop.classList.remove('active');
     }
 });
-
-
+//----------------------llang
 const en = document.getElementById('en');
 const langdrop = document.getElementById('lang-dropdown')
 
@@ -45,18 +44,23 @@ function langdr(){
 }
 
 window.addEventListener('click', function(event) {
-    if (!langdrop.contains(event.target)) {
-        langdrop.classList.remove('open');
+    if (!en.contains(event.target)) {
+        langdrop.classList.remove('active');
     }
 });
 
 //----------------------------
 const drmenu = document.getElementById('dropdown-menu-bar');
-
+const drop = document.getElementById('dropen')
 function dropen(){
     drmenu.classList.toggle('block');
-   
 }
+
+window.addEventListener('dblclick', function(event) {
+  if (!drop.contains(event.target)) {
+      // drmenu.classList.remove('block');
+  }
+});
 
 //----------------------------
 
@@ -67,10 +71,13 @@ function dresses(){
 }
 
 window.addEventListener('click', function(event) {
-    if (!dres.contains(event.target)) {
+    if (!dres.contains(event.target) && !drop.contains(event.target)) {
         ddm.classList.remove('drop-drop-open');
+        drmenu.classList.remove('block')
     }
   });
+
+
 
 //--------------------------
 const pages = document.getElementById('pages');
@@ -91,15 +98,16 @@ window.addEventListener('click', function(event) {
 const hamburger = document.getElementById('hamburger');
 
 function increaseHeight() {
-    var div = document.getElementById("multishop");
-    var ddmenu2 = document.getElementById("dd-menu");
-    if (div.style.height === "217px") {
-      div.style.height = "70px";
-      ddmenu2.style.display = 'none';
-    } else {
-      div.style.height = "217px";
-    }
+  var div = document.getElementById("multishop");
+  var ddmenu2 = document.getElementById("dd-menu");
+  if (div.style.height === "217px") {
+    div.style.height = "70px";
+    ddmenu2.style.display = 'none'
+  } else {
+    div.style.height = "217px";
+    ddmenu2.style.display = 'none';
   }
+}
 
   //-----------dd-------------------
 

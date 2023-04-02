@@ -92,15 +92,16 @@ window.addEventListener('click', function(event) {
 const hamburger = document.getElementById('hamburger');
 
 function increaseHeight() {
-    var div = document.getElementById("multishop");
-    var ddmenu2 = document.getElementById("dd-menu");
-    if (div.style.height === "217px") {
-      div.style.height = "70px";
-      ddmenu2.style.display = 'none';
-    } else {
-      div.style.height = "217px";
-    }
+  var div = document.getElementById("multishop");
+  var ddmenu2 = document.getElementById("dd-menu");
+  if (div.style.height === "217px") {
+    div.style.height = "70px";
+    ddmenu2.style.display = 'none';
+  } else {
+    div.style.height = "217px";
+    ddmenu2.style.display = 'none';
   }
+}
 
   //-----------dd-------------------
 
